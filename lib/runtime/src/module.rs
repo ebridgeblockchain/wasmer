@@ -34,7 +34,7 @@ pub struct ModuleInner {
     pub sig_registry: SigRegistry,
 }
 
-pub struct Module(Rc<ModuleInner>);
+pub struct Module(pub Rc<ModuleInner>);
 
 impl Module {
     #[inline]
